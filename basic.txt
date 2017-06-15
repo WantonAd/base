@@ -1,8 +1,14 @@
 Les fonctionnalites de WantonAd :
 	I.Site Web
-		Connexion :
-		Deconnexion :
-		Inscription :
+		General:
+			Connexion :
+			Deconnexion :
+			Inscription :
+		
+		Annonceur :
+		
+		Utilisateur :
+		
 		
 		
 	II.Extension Web
