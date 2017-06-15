@@ -1,10 +1,6 @@
 Les fonctionnalites de WantonAd :
 	I.Site Web
-<<<<<<< HEAD
 	II.Extension Web
-	BITE
-	...
-=======
 		General:
 			Connexion :
 			Deconnexion :
