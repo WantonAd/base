@@ -1,3 +1,5 @@
 Les fonctionnalites de WantonAd :
 	I.Site Web
 	II.Extension Web
+	BITE
+	...
