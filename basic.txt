@@ -5,3 +5,6 @@ Les fonctionnalites de WantonAd :
 		
 		
 	II.Extension Web
+		Connexion / Deconnexion :
+		Inscription : Renvoyer l'utilisateur vers le site web
+		
