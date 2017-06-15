@@ -1,10 +1,12 @@
 Les fonctionnalites de WantonAd :
 	I.Site Web
-		Connexion / Deconnexion :
+		Connexion :
+		Deconnexion :
 		Inscription :
 		
 		
 	II.Extension Web
-		Connexion / Deconnexion :
+		Connexion : Affiche un 'pop up' permettant la connexion.
+		Deconnexion :
 		Inscription : Renvoyer l'utilisateur vers le site web
 		
