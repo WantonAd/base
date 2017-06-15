@@ -1,4 +1,4 @@
-Les fonctionnalites de WantonAd :
+﻿Les fonctionnalites de WantonAd :
 	I.Site Web
 		General:
 			Connexion :
