@@ -9,4 +9,7 @@ Les fonctionnalites de WantonAd :
 		Connexion : Affiche un 'pop up' permettant la connexion.
 		Deconnexion :
 		Inscription : Renvoyer l'utilisateur vers le site web
-		
+		Activation / Desactivation de l extension :
+		Voir sa tune : 
+		Voir son profil : Lien vers sa page de profil
+		Visiter le Site : Lien vers la page d'accueil
