@@ -1,5 +1,27 @@
 Les fonctionnalites de WantonAd :
 	I.Site Web
+<<<<<<< HEAD
 	II.Extension Web
 	BITE
 	...
+=======
+		General:
+			Connexion :
+			Deconnexion :
+			Inscription :
+		
+		Annonceur :
+		
+		Utilisateur :
+		
+		
+		
+	II.Extension Web
+		Connexion : Affiche un 'pop up' permettant la connexion.
+		Deconnexion :
+		Inscription : Renvoyer l'utilisateur vers le site web
+		Activation / Desactivation de l extension :
+		Voir sa tune : 
+		Voir son profil : Lien vers sa page de profil
+		Visiter le Site : Lien vers la page d'accueil
+>>>>>>> 2d9abac0264c5d17dd580ff791b7747d7cfc021e
