@@ -4,11 +4,17 @@ Les fonctionnalites de WantonAd :
 			Connexion :
 			Deconnexion :
 			Inscription :
+			Présentation de l'agence :
+			Tuto / fonctionnment du site :
 		
 		Annonceur :
 			-Voir son profil
 			-Choisir
 		Utilisateur :
+			-Voir son profil : 
+				Information Personnel : Nom / Prenom / sexe / adresse mail / ..
+				Statistique Personnel : Date d'inscription / Tune gagné depuis le debut / tune gagné pour chaque mois.
+			
 		
 		
 		
