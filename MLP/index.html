@@ -60,7 +60,7 @@
 				
 				var area = "<area shape=\"rect\" id=\"milieu\" coords=" + rect1coor1 + "," + rect1coor2 + ";" + rect1coor3 + "," + rect1coor4 + " onclick=\"gotoparty()\" alt=\"Contact\"/>";
 				area = area + "<area shape=\"rect\" id=\"gauche\" coords=" + rect2coor1 + "," + rect2coor2 + ";" + rect2coor3 + "," + rect2coor4 + " onclick=\"gotogallery()\" alt=\"Contact\"/>";
-				area = area + "<area shape=\"rect\" id=\"droite\" coords=" + rect3coor1 + "," + rect3coor2 + ";" + rect3coor3 + "," + rect3coor4 + " onclick=\"#\" alt=\"Contact\"/>";
+				area = area + "<area shape=\"rect\" id=\"droite\" coords=" + rect3coor1 + "," + rect3coor2 + ";" + rect3coor3 + "," + rect3coor4 + " onclick=\"gotohistory()\" alt=\"Contact\"/>";
 				area = area + "<area shape=\"rect\" coords=" + rect4coor1 + "," + rect4coor2 + ";" + rect4coor3 + "," + rect4coor4 + " href=\"http://h4.us.mp4.fxtimg.com/videos/6175/fx_6175_480.mp4?st=6xtxrYFdn3v31ZFKcVU1Hg&e=1497913403\" alt=\"Contact\"/>";
 				
 				document.getElementById('panneaux').innerHTML = area;
@@ -461,6 +461,29 @@
 			////////////////////////////
 			//						  //
 			//     SNIPPET GALLERY    //
+			//           FIN          //
+			//                        //
+			////////////////////////////
+			
+			////////////////////////////
+			//						  //
+			//     SNIPPET HISTORY    //
+			//          DEBUT         //
+			//                        //
+			////////////////////////////
+			
+			function gotohistory()
+			{
+				document.getElementById("retourindex").style.opacity = "1";
+				document.getElementById("fond").src = "./img/history.png";
+				
+				var area = "";
+				document.getElementById('panneaux').innerHTML = area;
+			}
+			
+			////////////////////////////
+			//						  //
+			//     SNIPPET HISTORY    //
 			//           FIN          //
 			//                        //
 			////////////////////////////
