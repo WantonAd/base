@@ -54,7 +54,7 @@
 				var rect3coor4 = Hscreen * 38 / 100;
 				
 				var area = "<area shape=\"rect\" id=\"milieu\" coords=" + rect1coor1 + "," + rect1coor2 + ";" + rect1coor3 + "," + rect1coor4 + " onclick=\"gotoparty()\" alt=\"Contact\"/>";
-				area = area + "<area shape=\"rect\" id=\"gauche\" coords=" + rect2coor1 + "," + rect2coor2 + ";" + rect2coor3 + "," + rect2coor4 + " onclick=\"gotohistoire()\" alt=\"Contact\"/>";
+				area = area + "<area shape=\"rect\" id=\"gauche\" coords=" + rect2coor1 + "," + rect2coor2 + ";" + rect2coor3 + "," + rect2coor4 + " onclick=\"gotogallery()\" alt=\"Contact\"/>";
 				area = area + "<area shape=\"rect\" id=\"droite\" coords=" + rect3coor1 + "," + rect3coor2 + ";" + rect3coor3 + "," + rect3coor4 + " onclick=\"#\" alt=\"Contact\"/>";
 				
 				document.getElementById('panneaux').innerHTML = area;
@@ -432,6 +432,29 @@
 			////////////////////////////
 			//						  //
 			//   SNIPPET FLUTTERSHY   //
+			//           FIN          //
+			//                        //
+			////////////////////////////
+			
+			////////////////////////////
+			//						  //
+			//     SNIPPET GALLERY    //
+			//          DEBUT         //
+			//                        //
+			////////////////////////////
+			
+			function gotogallery()
+			{
+				document.getElementById("retourindex").style.opacity = "1";
+				document.getElementById("fond").src = "./img/gallerie.jpg";
+				
+				var area = "";
+				document.getElementById('panneaux').innerHTML = area;
+			}
+			
+			////////////////////////////
+			//						  //
+			//     SNIPPET GALLERY    //
 			//           FIN          //
 			//                        //
 			////////////////////////////
