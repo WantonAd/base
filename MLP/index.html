@@ -1,0 +1,474 @@
+<HTML>
+	<HEAD>
+		<title>
+			My Little Poney
+		</title>
+	</HEAD>
+
+	<BODY style="background: #000; margin:0px; padding: 0px;">
+		<div id="lefond">
+			<img id="fond" alt="Orientation" width="100%" height="100%" border="0" usemap="#panneaux" />
+			<img id="retourindex" src="./img/retour.png" onclick="gotoindex()" style="position:absolute; bottom: 0px; left: 0px; width: 10%; height: auto;">
+		</div>
+		<map name="panneaux" id="panneaux">
+		</map>
+
+		<script type="text/javascript">
+		
+			addEventListener("click", function() {
+			console.log("ken");
+			var el = document.documentElement, rfs = el.requestFullScreen || el.webkitRequestFullScreen || el.mozRequestFullScreen;
+			rfs.call(el);
+			});
+			
+			////////////////////////////
+			//						  //
+			//	    SNIPPET INDEX     //
+			//          DEBUT         //
+			//                        //
+			////////////////////////////
+			
+			gotoindex();
+			
+			function gotoindex()
+			{
+				document.getElementById("retourindex").style.opacity = "0";
+				document.getElementById("fond").src = "./img/vierge.jpg";
+			
+				var Lscreen = screen.width;
+				var Hscreen = screen.height;
+				
+				var rect1coor1 = Lscreen * 45 / 100;
+				var rect1coor3 = Lscreen * 55 / 100;
+				var rect1coor2 = Hscreen * 8 / 100;
+				var rect1coor4 = Hscreen * 51 / 100;
+				
+				var rect2coor1 = Lscreen * 5 / 100;
+				var rect2coor3 = Lscreen * 15 / 100;
+				var rect2coor2 = Hscreen * 20 / 100;
+				var rect2coor4 = Hscreen * 70 / 100;
+				
+				var rect3coor1 = Lscreen * 75 / 100;
+				var rect3coor3 = Lscreen * 85 / 100;
+				var rect3coor2 = Hscreen * 4 / 100;
+				var rect3coor4 = Hscreen * 38 / 100;
+				
+				var area = "<area shape=\"rect\" id=\"milieu\" coords=" + rect1coor1 + "," + rect1coor2 + ";" + rect1coor3 + "," + rect1coor4 + " onclick=\"gotoparty()\" alt=\"Contact\"/>";
+				area = area + "<area shape=\"rect\" id=\"gauche\" coords=" + rect2coor1 + "," + rect2coor2 + ";" + rect2coor3 + "," + rect2coor4 + " onclick=\"gotohistoire()\" alt=\"Contact\"/>";
+				area = area + "<area shape=\"rect\" id=\"droite\" coords=" + rect3coor1 + "," + rect3coor2 + ";" + rect3coor3 + "," + rect3coor4 + " onclick=\"#\" alt=\"Contact\"/>";
+				
+				document.getElementById('panneaux').innerHTML = area;
+				
+				milieu.addEventListener("mouseover", function()
+				{
+					document.getElementById("fond").src = "./img/milieu.jpg";
+				});
+				
+				milieu.addEventListener("mouseout", function()
+				{
+					document.getElementById("fond").src = "./img/vierge.jpg";
+				});
+				
+				gauche.addEventListener("mouseover", function()
+				{
+					document.getElementById("fond").src = "./img/gauche.jpg";
+				});
+				
+				gauche.addEventListener("mouseout", function()
+				{
+					document.getElementById("fond").src = "./img/vierge.jpg";
+				});
+				
+				droite.addEventListener("mouseover", function()
+				{
+					document.getElementById("fond").src = "./img/droite.jpg";
+				});
+				
+				droite.addEventListener("mouseout", function()
+				{
+					document.getElementById("fond").src = "./img/vierge.jpg";
+				});
+			}
+			
+			////////////////////////////
+			//						  //
+			//	    SNIPPET INDEX     //
+			//           FIN          //
+			//                        //
+			////////////////////////////
+			
+			////////////////////////////
+			//						  //
+			//	    SNIPPET PARTY     //
+			//          DEBUT         //
+			//                        //
+			////////////////////////////
+			
+			function gotoparty()
+			{
+				document.getElementById("retourindex").style.opacity = "1";
+				document.getElementById("fond").src = "./img/perso.png";
+			
+				var Lscreen = screen.width;
+				var Hscreen = screen.height;
+				
+				var rect1coor1 = Lscreen * 3 / 100;
+				var rect1coor3 = Lscreen * 31 / 100;
+				var rect1coor2 = Hscreen * 11 / 100;
+				var rect1coor4 = Hscreen * 38 / 100;
+				
+				var rect2coor1 = Lscreen * 59 / 100;
+				var rect2coor3 = Lscreen * 83 / 100;
+				var rect2coor2 = Hscreen * 7 / 100;
+				var rect2coor4 = Hscreen * 41 / 100;
+				
+				var rect3coor1 = Lscreen * 3 / 100;
+				var rect3coor3 = Lscreen * 30 / 100;
+				var rect3coor2 = Hscreen * 38 / 100;
+				var rect3coor4 = Hscreen * 73 / 100;
+
+				var rect4coor1 = Lscreen * 30 / 100;
+				var rect4coor3 = Lscreen * 45 / 100;
+				var rect4coor2 = Hscreen * 62 / 100;
+				var rect4coor4 = Hscreen * 100 / 100;
+				
+				var rect5coor1 = Lscreen * 45 / 100;
+				var rect5coor3 = Lscreen * 56 / 100;
+				var rect5coor2 = Hscreen * 52 / 100;
+				var rect5coor4 = Hscreen * 86 / 100;
+				
+				var rect6coor1 = Lscreen * 56 / 100;
+				var rect6coor3 = Lscreen * 67 / 100;
+				var rect6coor2 = Hscreen * 63 / 100;
+				var rect6coor4 = Hscreen * 95/ 100;
+			
+				var rect7coor1 = Lscreen * 67 / 100;
+				var rect7coor3 = Lscreen * 82 / 100;
+				var rect7coor2 = Hscreen * 52 / 100;
+				var rect7coor4 = Hscreen * 82 / 100;
+				
+				var rect8coor1 = Lscreen * 82 / 100;
+				var rect8coor3 = Lscreen * 99 / 100;
+				var rect8coor2 = Hscreen * 54 / 100;
+				var rect8coor4 = Hscreen * 82 / 100;
+            
+				var area = "<area class=\"ar\" shape=\"rect\" id=\"rainbowdash\" coords=" + rect1coor1 + "," + rect1coor2 + ";" + rect1coor3 + "," + rect1coor4 + " onclick=\"gotodash()\" alt=\"Contact\"/>";
+				area = area + "<area class=\"ar\" shape=\"rect\" id=\"luna\" coords=" + rect2coor1 + "," + rect2coor2 + ";" + rect2coor3 + "," + rect2coor4 + " onclick=\"gotoluna()\" alt=\"Contact\"/>";
+				area = area + "<area class=\"ar\" shape=\"rect\" id=\"celestia\" coords=" + rect3coor1 + "," + rect3coor2 + ";" + rect3coor3 + "," + rect3coor4 + " onclick=\"gotoceles()\" alt=\"Contact\"/>";
+				area = area + "<area class=\"ar\" shape=\"rect\" id=\"pinkypie\" coords=" + rect4coor1 + "," + rect4coor2 + ";" + rect4coor3 + "," + rect4coor4 + " onclick=\"gotopinky()\" alt=\"Contact\"/>";
+				area = area + "<area class=\"ar\" shape=\"rect\" id=\"rarity\" coords=" + rect5coor1 + "," + rect5coor2 + ";" + rect5coor3 + "," + rect5coor4 + " onclick=\"gotorarity()\" alt=\"Contact\"/>";
+				area = area + "<area class=\"ar\" shape=\"rect\" id=\"applejack\" coords=" + rect6coor1 + "," + rect6coor2 + ";" + rect6coor3 + "," + rect6coor4 + " onclick=\"gotoapple()\" alt=\"Contact\"/>";
+				area = area + "<area class=\"ar\" shape=\"rect\" id=\"twilight\" coords=" + rect7coor1 + "," + rect7coor2 + ";" + rect7coor3 + "," + rect7coor4 + " onclick=\"gototwilight()\" alt=\"Contact\"/>";
+				area = area + "<area class=\"ar\" shape=\"rect\" id=\"fluttershy\" coords=" + rect8coor1 + "," + rect8coor2 + ";" + rect8coor3 + "," + rect8coor4 + " onclick=\"gotoshy()\" alt=\"Contact\"/>";
+				
+				document.getElementById('panneaux').innerHTML = area;
+				
+				document.getElementById("rainbowdash").addEventListener("mouseover", function()
+				{
+					document.getElementById("fond").src = "./img/partyrainbowdash.png";
+				});
+				
+				document.getElementById("rainbowdash").addEventListener("mouseout", function()
+				{
+					document.getElementById("fond").src = "./img/perso.png";
+				});
+				
+				document.getElementById("luna").addEventListener("mouseover", function()
+				{
+					document.getElementById("fond").src = "./img/partyluna.png";
+				});
+				
+				document.getElementById("luna").addEventListener("mouseout", function()
+				{
+					document.getElementById("fond").src = "./img/perso.png";
+				});
+				
+				document.getElementById("celestia").addEventListener("mouseover", function()
+				{
+					document.getElementById("fond").src = "./img/partycelestia.png";
+				});
+				
+				document.getElementById("celestia").addEventListener("mouseout", function()
+				{
+					document.getElementById("fond").src = "./img/perso.png";
+				});
+				
+				document.getElementById("pinkypie").addEventListener("mouseover", function()
+				{
+					document.getElementById("fond").src = "./img/partypinkypie.png";
+				});
+				
+				document.getElementById("pinkypie").addEventListener("mouseout", function()
+				{
+					document.getElementById("fond").src = "./img/perso.png";
+				});
+				
+				document.getElementById("rarity").addEventListener("mouseover", function()
+				{
+					document.getElementById("fond").src = "./img/partyrarity.png";
+				});
+				
+				document.getElementById("rarity").addEventListener("mouseout", function()
+				{
+					document.getElementById("fond").src = "./img/perso.png";
+				});
+				
+				document.getElementById("applejack").addEventListener("mouseover", function()
+				{
+					document.getElementById("fond").src = "./img/partyapplejack.png";
+				});
+				
+				document.getElementById("applejack").addEventListener("mouseout", function()
+				{
+					document.getElementById("fond").src = "./img/perso.png";
+				});
+				
+				document.getElementById("twilight").addEventListener("mouseover", function()
+				{
+					document.getElementById("fond").src = "./img/partytwilight.png";
+				});
+				
+				document.getElementById("twilight").addEventListener("mouseout", function()
+				{
+					document.getElementById("fond").src = "./img/perso.png";
+				});
+				
+				document.getElementById("fluttershy").addEventListener("mouseover", function()
+				{
+					document.getElementById("fond").src = "./img/partyfluttershy.png";
+				});
+				
+				document.getElementById("fluttershy").addEventListener("mouseout", function()
+				{
+					document.getElementById("fond").src = "./img/perso.png";
+				});
+				
+			}
+			
+			////////////////////////////
+			//						  //
+			//	    SNIPPET PARTY     //
+			//           FIN          //
+			//                        //
+			////////////////////////////
+			
+			////////////////////////////
+			//						  //
+			//	    SNIPPET DASH      //
+			//          DEBUT         //
+			//                        //
+			////////////////////////////
+			
+			function gotodash()
+			{
+				document.getElementById("retourindex").style.opacity = "1";
+				document.getElementById("fond").src = "./img/dashroom.png";
+				
+				var area = "";
+				document.getElementById('panneaux').innerHTML = area;				
+			}
+			
+			////////////////////////////
+			//						  //
+			//	    SNIPPET DASH      //
+			//           FIN          //
+			//                        //
+			////////////////////////////
+			
+			////////////////////////////
+			//						  //
+			//	    SNIPPET LUNA      //
+			//          DEBUT         //
+			//                        //
+			////////////////////////////
+			
+			function gotoluna()
+			{
+				document.getElementById("retourindex").style.opacity = "1";
+				document.getElementById("fond").src = "./img/lunaroom.png";
+				
+				var area = "";
+				document.getElementById('panneaux').innerHTML = area;				
+			}
+			
+			////////////////////////////
+			//						  //
+			//	    SNIPPET LUNA      //
+			//           FIN          //
+			//                        //
+			////////////////////////////
+			
+			////////////////////////////
+			//						  //
+			//    SNIPPET CELESTIA    //
+			//          DEBUT         //
+			//                        //
+			////////////////////////////
+			
+			function gotoceles()
+			{
+				document.getElementById("retourindex").style.opacity = "1";
+				document.getElementById("fond").src = "./img/celestiaroom.png";
+				
+				var area = "";
+				document.getElementById('panneaux').innerHTML = area;				
+			}
+			
+			////////////////////////////
+			//						  //
+			//    SNIPPET CELESTIA    //
+			//           FIN          //
+			//                        //
+			////////////////////////////
+			
+			////////////////////////////
+			//						  //
+			//   SNIPPET PINKIE PIE   //
+			//          DEBUT         //
+			//                        //
+			////////////////////////////
+			
+			function gotopinky()
+			{
+				document.getElementById("retourindex").style.opacity = "1";
+				document.getElementById("fond").src = "./img/pinkypieroom.png";
+				
+				var area = "";
+				document.getElementById('panneaux').innerHTML = area;				
+			}
+			
+			////////////////////////////
+			//						  //
+			//   SNIPPET PINKIE PIE   //
+			//           FIN          //
+			//                        //
+			////////////////////////////
+			
+			////////////////////////////
+			//						  //
+			//     SNIPPET RARITY     //
+			//          DEBUT         //
+			//                        //
+			////////////////////////////
+			
+			function gotorarity()
+			{
+				document.getElementById("retourindex").style.opacity = "1";
+				document.getElementById("fond").src = "./img/rarityroom.png";
+				
+				var area = "";
+				document.getElementById('panneaux').innerHTML = area;				
+			}
+			
+			////////////////////////////
+			//						  //
+			//     SNIPPET RARITY     //
+			//           FIN          //
+			//                        //
+			////////////////////////////
+			
+			////////////////////////////
+			//						  //
+			//   SNIPPET APPLE JACK   //
+			//          DEBUT         //
+			//                        //
+			////////////////////////////
+			
+			function gotoapple()
+			{
+				document.getElementById("retourindex").style.opacity = "1";
+				document.getElementById("fond").src = "./img/applejackroom.png";
+				
+				var area = "";
+				document.getElementById('panneaux').innerHTML = area;				
+			}
+			
+			////////////////////////////
+			//						  //
+			//   SNIPPET APPLE JACK   //
+			//           FIN          //
+			//                        //
+			////////////////////////////
+			
+			////////////////////////////
+			//						  //
+			//    SNIPPET TWILIGHT    //
+			//          DEBUT         //
+			//                        //
+			////////////////////////////
+			
+			function gototwilight()
+			{
+				document.getElementById("retourindex").style.opacity = "1";
+				document.getElementById("fond").src = "./img/twilightroom.png";
+				
+				var area = "";
+				document.getElementById('panneaux').innerHTML = area;				
+			}
+			
+			////////////////////////////
+			//						  //
+			//    SNIPPET TWILIGHT    //
+			//           FIN          //
+			//                        //
+			////////////////////////////
+			
+			////////////////////////////
+			//						  //
+			//   SNIPPET FLUTTERSHY   //
+			//          DEBUT         //
+			//                        //
+			////////////////////////////
+			
+			function gotoshy()
+			{
+				document.getElementById("retourindex").style.opacity = "1";
+				document.getElementById("fond").src = "./img/fluttershyroom.png";
+				
+				var area = "";
+				document.getElementById('panneaux').innerHTML = area;				
+			}
+			
+			////////////////////////////
+			//						  //
+			//   SNIPPET FLUTTERSHY   //
+			//           FIN          //
+			//                        //
+			////////////////////////////
+		</script>
+		
+		<style>
+			.btn {
+			  background: #34c6d9;
+			  background-image: -webkit-linear-gradient(top, #34c6d9, #2bb8a0);
+			  background-image: -moz-linear-gradient(top, #34c6d9, #2bb8a0);
+			  background-image: -ms-linear-gradient(top, #34c6d9, #2bb8a0);
+			  background-image: -o-linear-gradient(top, #34c6d9, #2bb8a0);
+			  background-image: linear-gradient(to bottom, #34c6d9, #2bb8a0);
+			  -webkit-border-radius: 9;
+			  -moz-border-radius: 9;
+			  border-radius: 9px;
+			  font-family: Arial;
+			  color: #ffffff;
+			  font-size: 20px;
+			  padding: 20px;
+			  text-decoration: none;
+			  position: absolute;
+			  width: 400px;
+			  left: 50%;
+			  margin-left: -200px;
+			  top: 40%;
+			}
+
+			.btn:hover {
+			  background: #3cb0fd;
+			  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+			  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+			  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+			  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+			  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+			  text-decoration: none;
+			}
+		</style>
+	</BODY>
+</HTML>	

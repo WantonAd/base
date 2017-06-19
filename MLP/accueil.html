@@ -1,0 +1,55 @@
+<HTML>
+	<HEAD>
+		<title>
+			My Little Poney
+		</title>
+		<script>
+			addEventListener("click", function() {
+			console.log("ken");
+			var el = document.documentElement, rfs = el.requestFullScreen || el.webkitRequestFullScreen || el.mozRequestFullScreen;
+			rfs.call(el);
+			});
+		</script>
+	</HEAD>
+
+	<BODY style="background: #000; margin:0px; padding: 0px;">
+		<div id="lefond2" style="text-align: center;" width="100%" height="100%">
+			<a onclick="gotoindex()"><div class="btn">COMMENCER L'AVENTURE !</div></a>
+			<img id="fond" src="./img/wall.jpg" alt="Orientation" width="100%" height="100%" border="0" usemap="#panneaux" />
+		</div>
+	</BODY>
+	
+	<style>
+		.btn {
+		  background: #34c6d9;
+		  background-image: -webkit-linear-gradient(top, #34c6d9, #2bb8a0);
+		  background-image: -moz-linear-gradient(top, #34c6d9, #2bb8a0);
+		  background-image: -ms-linear-gradient(top, #34c6d9, #2bb8a0);
+		  background-image: -o-linear-gradient(top, #34c6d9, #2bb8a0);
+		  background-image: linear-gradient(to bottom, #34c6d9, #2bb8a0);
+		  -webkit-border-radius: 9;
+		  -moz-border-radius: 9;
+		  border-radius: 9px;
+		  font-family: Arial;
+		  color: #ffffff;
+		  font-size: 20px;
+		  padding: 20px;
+		  text-decoration: none;
+		  position: absolute;
+		  width: 400px;
+		  left: 50%;
+		  margin-left: -200px;
+		  top: 40%;
+		}
+
+		.btn:hover {
+		  background: #3cb0fd;
+		  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+		  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+		  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+		  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+		  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+		  text-decoration: none;
+		}
+	</style>
+</HTML>	
