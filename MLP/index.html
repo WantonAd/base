@@ -14,11 +14,13 @@
 		</map>
 
 		<script type="text/javascript">
-		
+			var active = 0;
+			
 			addEventListener("click", function() {
-			console.log("ken");
-			var el = document.documentElement, rfs = el.requestFullScreen || el.webkitRequestFullScreen || el.mozRequestFullScreen;
-			rfs.call(el);
+				var el = document.documentElement, rfs = el.requestFullScreen || el.webkitRequestFullScreen || el.mozRequestFullScreen;
+				rfs.call(el);
+				if(active == 0) setTimeout(gotoindex, 500);
+				if(active == 1) setTimeout(gotoparty, 500);
 			});
 			
 			////////////////////////////
@@ -32,11 +34,19 @@
 			
 			function gotoindex()
 			{
+				active = 0;
 				document.getElementById("retourindex").style.opacity = "0";
 				document.getElementById("fond").src = "./img/vierge.jpg";
 			
-				var Lscreen = screen.width;
-				var Hscreen = screen.height;
+			var w = window,
+				d = document,
+				e = d.documentElement,
+				g = d.getElementsByTagName('body')[0],
+				x = w.innerWidth || e.clientWidth || g.clientWidth,
+				y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+				
+				var Lscreen = x;
+				var Hscreen = y;
 				
 				var rect1coor1 = Lscreen * 45 / 100;
 				var rect1coor3 = Lscreen * 55 / 100;
@@ -112,11 +122,19 @@
 			
 			function gotoparty()
 			{
+				active = 1;
 				document.getElementById("retourindex").style.opacity = "1";
 				document.getElementById("fond").src = "./img/perso.png";
 			
-				var Lscreen = screen.width;
-				var Hscreen = screen.height;
+				var w = window,
+				d = document,
+				e = d.documentElement,
+				g = d.getElementsByTagName('body')[0],
+				x = w.innerWidth || e.clientWidth || g.clientWidth,
+				y = w.innerHeight|| e.clientHeight|| g.clientHeight;
+				
+				var Lscreen = x;
+				var Hscreen = y;
 				
 				var rect1coor1 = Lscreen * 3 / 100;
 				var rect1coor3 = Lscreen * 31 / 100;
@@ -267,6 +285,7 @@
 			
 			function gotodash()
 			{
+				active = 2;
 				document.getElementById("retourindex").style.opacity = "1";
 				document.getElementById("fond").src = "./img/dashroom.png";
 				
@@ -290,6 +309,7 @@
 			
 			function gotoluna()
 			{
+				active = 2;
 				document.getElementById("retourindex").style.opacity = "1";
 				document.getElementById("fond").src = "./img/lunaroom.png";
 				
@@ -313,6 +333,7 @@
 			
 			function gotoceles()
 			{
+				active = 2;
 				document.getElementById("retourindex").style.opacity = "1";
 				document.getElementById("fond").src = "./img/celestiaroom.png";
 				
@@ -336,6 +357,7 @@
 			
 			function gotopinky()
 			{
+				active = 2;
 				document.getElementById("retourindex").style.opacity = "1";
 				document.getElementById("fond").src = "./img/pinkypieroom.png";
 				
@@ -359,6 +381,7 @@
 			
 			function gotorarity()
 			{
+				active = 2;
 				document.getElementById("retourindex").style.opacity = "1";
 				document.getElementById("fond").src = "./img/rarityroom.png";
 				
@@ -382,6 +405,7 @@
 			
 			function gotoapple()
 			{
+				active = 2;
 				document.getElementById("retourindex").style.opacity = "1";
 				document.getElementById("fond").src = "./img/applejackroom.png";
 				
@@ -405,6 +429,7 @@
 			
 			function gototwilight()
 			{
+				active = 2;
 				document.getElementById("retourindex").style.opacity = "1";
 				document.getElementById("fond").src = "./img/twilightroom.png";
 				
@@ -428,6 +453,7 @@
 			
 			function gotoshy()
 			{
+				active = 2;
 				document.getElementById("retourindex").style.opacity = "1";
 				document.getElementById("fond").src = "./img/fluttershyroom.png";
 				
@@ -451,6 +477,7 @@
 			
 			function gotogallery()
 			{
+				active = 3;
 				document.getElementById("retourindex").style.opacity = "1";
 				document.getElementById("fond").src = "./img/gallerie.jpg";
 				
@@ -474,6 +501,7 @@
 			
 			function gotohistory()
 			{
+				active = 4;
 				document.getElementById("retourindex").style.opacity = "1";
 				document.getElementById("fond").src = "./img/history.png";
 				
