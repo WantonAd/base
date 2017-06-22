@@ -16,17 +16,7 @@
 		<script src="./bootstrap-toggle.min.js"></script>
 	</head>
 	<body>
-		<nav class="navbar navbar-default" id="navbartt" style="font-size: 150%;">
-		  <div class="container-fluid">
-			<div class="navbar-header">
-			  <a class="navbar-brand" href="./index.php"><b>WantonGraph</b></a>
-			</div>
-			<ul class="nav navbar-nav">
-			  <li id="liacc" class="active"><a href="./index.php">Accueil</a></li>
-			  <li id="lieno"><a href="./galerie.php">Galerie</a></li>
-			  <li id="lirfi"><a href="./contact.php">Contact</a></li>
-			</ul>
-		  </div>
-		</nav>
+		<?php include('./menu.php'); ?>
+		<script> $('#liacc').addClass("active"); </script>
 	</body>
 </html>
