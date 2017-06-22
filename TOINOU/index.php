@@ -24,8 +24,7 @@
 			<ul class="nav navbar-nav">
 			  <li id="liacc"><a href="./index.php">Accueil</a></li>
 			  <li id="lieno"><a href="./galerie.php">Galerie</a></li>
-			  <li id="lirfi"><a href="./contact.php">Contacter</a></li>
-			  <!--<li id="licam"><a href="./cams.php">Caméras</a></li>-->
+			  <li id="lirfi"><a href="./contact.php">Contact</a></li>
 			</ul>
 		  </div>
 		</nav>
