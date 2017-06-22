@@ -22,7 +22,7 @@
 			  <a class="navbar-brand" href="./index.php"><b>WantonGraph</b></a>
 			</div>
 			<ul class="nav navbar-nav">
-			  <li id="liacc"><a href="./index.php">Accueil</a></li>
+			  <li id="liacc" class="active"><a href="./index.php">Accueil</a></li>
 			  <li id="lieno"><a href="./galerie.php">Galerie</a></li>
 			  <li id="lirfi"><a href="./contact.php">Contact</a></li>
 			</ul>
