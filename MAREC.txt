@@ -1,0 +1,36 @@
+﻿0 - Une ville - Sans contrainte
+2 - Un paintre .. sans contrainte
+3 - Une penssé politique .. avec contrainte
+5 - Une entreprise .. sans contraite 
+9 - Site d'une communauté .. sans contraite 
+8 - Des recettes .. avec contraite
+7 - Site E-commerce .. sans contraite (je veux de l'originalité !!)
+4 - Un produit innovant .. sans contraite
+1 - Une personnalité .. Avec contraite
+6 - Une entreprise .. Avec contraite (Epatte nous !!)*
+
+0 - Une ville - Sans contrainte
+1 - Une personnalité .. Avec contraite
+2 - Un paintre .. sans contrainte
+3 - Une penssé politique .. avec contrainte
+4 - Un produit innovant .. sans contraite
+5 - Une entreprise .. sans contraite
+6 - Une entreprise .. Avec contraite 
+7 - Site E-commerce .. sans contraite (je veux de l'originalité !!)
+8 - Des recettes .. avec contraite
+9 - Site d'une communauté .. sans contraite 
+
+LA spécial : Produit innovant : 
+Casque audio et lunettes 3D.
+Positionné sur le haut de la tête, Glyph est un casque audio de très haute qualité. 
+Une fois basculé sur les yeux, 
+il se transforme en lunettes 3D permettant de regarder des films et autres vidéos en totale immersion.
+
+Un site de présentation avec possibilité d'acheter l'objet en 2 formule ! 
+1- Acheter tout de suite 
+2 - Payer en plusieur fois (sur 1 / 3 / 5 mois)
+LE clients doit pouvoir poser des question sur le produit en remplissant un formulaire de contact ! 
+Le site sera composé de deux pages : Accueil & Shop !
+Le clients pourra choisir le motif de son casque ! le motif aléatoire existera !
+Lors de l'achat du casque le client doit fournir Son mail / Son prénom / son nom / son adresse postal / Code postal / Ville . Puis une demande de payement sera faite si tout les champs sont rempli, en demandant la carte banquére ou le paypal du client !
+On moment du renseignement de la carte banquaire ou du compte paypal vous devais faire un récapitulatif de la commande du client !
