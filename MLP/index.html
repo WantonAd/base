@@ -19,8 +19,8 @@
 			addEventListener("click", function() {
 				var el = document.documentElement, rfs = el.requestFullScreen || el.webkitRequestFullScreen || el.mozRequestFullScreen;
 				rfs.call(el);
-				if(active == 0) setTimeout(gotoindex, 500);
-				if(active == 1) setTimeout(gotoparty, 500);
+				if(active == 0) setTimeout(gotoindex, 100);
+				if(active == 1) setTimeout(gotoparty, 100);
 			});
 			
 			////////////////////////////
